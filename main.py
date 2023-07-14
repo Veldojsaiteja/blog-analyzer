@@ -14,7 +14,7 @@ from nltk.corpus import wordnet
 
 # Download WordNet resource
 nltk.download('wordnet')
-
+nltk.download('punkt')
 # Keyword Analysis
 def suggest_keywords(blog_content, target_audience):
     # Tokenize the blog content into individual words
