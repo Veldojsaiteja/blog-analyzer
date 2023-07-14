@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Model UI</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Model User Interface</h1>
+        <form action="/" method="post" onsubmit="return validateForm()">
+            <label for="blog_content">Enter Blog Content:</label><br>
+            <textarea id="blog_content" name="blog_content" rows="10" cols="50" style="padding-right=20;" required></textarea><br>
+            <span id="contentError" class="error"></span><br>
+            <input type="submit" value="Analyze">
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            // Get the value of the blog content input
+            var blogContent = document.getElementById("blog_content").value;
+            
+            // Check if the blog content is empty
+            if (blogContent.trim() === "") {
+                document.getElementById("contentError").textContent = "Blog content is required.";
+                return false; // Prevent form submission
+            } else {
+                document.getElementById("contentError").textContent = ""; // Clear the error message
+                return true; // Allow form submission
+            }
+        }
+    </script>
+</body>
+</html>
