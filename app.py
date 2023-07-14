@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+
 from main import analyze_blog_content
 
 app = Flask(__name__)
