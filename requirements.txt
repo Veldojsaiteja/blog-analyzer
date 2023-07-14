@@ -110,7 +110,6 @@ scikit-learn
 scipy
 Send2Trash
 six
-sklearn
 sniffio
 soupsieve
 stack-data
