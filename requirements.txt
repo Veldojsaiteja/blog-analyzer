@@ -94,7 +94,6 @@ pyparsing
 python-dateutil
 python-json-logger
 pytz
-pywinpty
 PyYAML
 pyzmq
 qtconsole
